@@ -1,0 +1,88 @@
+# sys-devel/flex-2.5.35
+ac_cv_func_malloc_0_nonnull=yes
+ac_cv_func_realloc_0_nonnull=yes
+
+# sys-devel/gettext-0.17
+gl_cv_func_wcwidth_works=yes
+
+# coreutils
+#   https://bugs.gentoo.org/177061
+#   https://bugs.gentoo.org/553988
+gl_cv_func_re_compile_pattern_working=yes
+
+# sys-apps/dbus-1.3.0
+ac_cv_have_abstract_sockets=yes
+
+# autoconf-provided macros.
+# The AC_FUNC_WAIT3 macro uses AC_RUN.  It's obsolete, but some still use it.
+ac_cv_func_wait3_rusage=yes
+
+# app-admin/sudo-1.7.2_p1
+sudo_cv_uid_t_len=10
+sudo_cv_func_unsetenv_void=no
+
+# dev-libs/glib-2.20.5
+ac_cv_func_posix_getpwuid_r=yes
+ac_cv_func_posix_getgrgid_r=yes
+# The following force glib to believe we have a "good printf"
+# which keeps it from using its internal replacement.
+ac_cv_func_vsnprintf_c99=yes
+ac_cv_func_printf_unix98=yes
+glib_cv_long_long_format=${glib_cv_long_long_format=ll}
+
+# dev-libs/libIDL-0.8.12
+libIDL_cv_long_long_format=${libIDL_cv_long_long_format=ll}
+
+# dev-libs/dbus-glib-0.76
+ac_cv_func_posix_getpwnam_r=yes
+
+# gnome-base/orbit-2.14.17
+ac_cv_alignof_CORBA_boolean=1
+ac_cv_alignof_CORBA_char=1
+ac_cv_alignof_CORBA_double=8
+ac_cv_alignof_CORBA_float=4
+ac_cv_alignof_CORBA_long=4
+ac_cv_alignof_CORBA_long_double=8
+ac_cv_alignof_CORBA_long_long=8
+ac_cv_alignof_CORBA_octet=1
+ac_cv_alignof_CORBA_pointer=4
+ac_cv_alignof_CORBA_short=2
+ac_cv_alignof_CORBA_struct=1
+ac_cv_alignof_CORBA_wchar=2
+ac_cv_func_getaddrinfo=${ac_cv_func_getaddrinfo=yes}
+
+# app-editors/vim-core-7.2.182
+vim_cv_toupper_broken=no
+vim_cv_terminfo=yes
+vim_cv_tty_group=world
+vim_cv_tty_mode=0666
+vim_cv_getcwd_broken=no
+vim_cv_stat_ignores_slash=yes
+vim_cv_memmove_handles_overlap=yes
+
+# dev-libs/popt-1.1.4
+ac_cv_va_copy=yes
+
+# app-shells/bash-4.0
+bash_cv_sys_named_pipes=present
+
+# x11-libs/startup-notification-0.10
+lf_cv_sane_realloc=yes
+
+# netperf2 autotest
+ac_cv_func_setpgrp_void=yes
+
+# net-analyzer/tcpdump-4.1.1
+ac_cv_linux_vers=${ac_cv_linux_vers=2}
+td_cv_buggygetaddrinfo=${td_cv_buggygetaddrinfo=no}
+
+# screen
+screen_cv_sys_bcopy_overlap=${screen_cv_sys_bcopy_overlap=no}
+screen_cv_sys_memcpy_overlap=${screen_cv_sys_memcpy_overlap=no}
+screen_cv_sys_memmove_overlap=${screen_cv_sys_memmove_overlap=no}
+screen_cv_sys_fifo_broken_impl=${screen_cv_sys_fifo_broken_impl=yes}
+screen_cv_sys_fifo_usable=${screen_cv_sys_fifo_usable=yes}
+screen_cv_sys_select_broken_retval=${screen_cv_sys_select_broken_retval=no}
+screen_cv_sys_sockets_nofs=${screen_cv_sys_sockets_nofs=no}
+screen_cv_sys_sockets_usable=${screen_cv_sys_sockets_usable=yes}
+screen_cv_sys_terminfo_used=${screen_cv_sys_terminfo_used=yes}
